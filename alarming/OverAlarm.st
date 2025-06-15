@@ -7,13 +7,13 @@
 --
 -- Dependencies: None
 -- 
--- All right reserved (c) 2025 Simon Marceau.
+-- All rights reserved (c) 2025 Simon Marceau.
 -----------------------------------------------------------------------------------*)
 FUNCTION_BLOCK OverAlarm
 VAR_INPUT
     signal: REAL;           (* Current process value being monitored *)
     alarmSetpoint: REAL;    (* Value above which the alarm activates *)
-    alarmHysteresis: REAL;  (* Hysteresis value for alarm deactivation *)
+    alarmHysteresis: REAL;  (* Hysteresis value for alarm deactivation (must be positive) *)
     suppress: BOOL;         (* External signal to bypass the alarm *)
 END_VAR
 VAR_OUTPUT
